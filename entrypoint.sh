@@ -6,3 +6,6 @@ fi
 
 export CARDS_SETTINGS=/src/config.txt
 gunicorn --bind  0.0.0.0:8000 flash_cards:app
+
+export CARDS_SETTINGS=/src/config.txt
+gunicorn --bind  0.0.0.0:$PORT flash_cards:app
